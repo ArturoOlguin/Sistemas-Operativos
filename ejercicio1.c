@@ -1,3 +1,19 @@
+/*EQUIPO TACOS LINUXEROS*/
+
+
+/*1. En una nave industrial existe una máquina de inyectar que deja cada pieza producida en una cinta transportadora de tamaño limitado.
+Existe un robot que recoge las piezas de la cinta (una cada vez) y las deja en las cajas de embalaje.
+Finalmente, tenemos un operario que, de vez en cuando, recoge 3 piezas para realizar el control de calidad, si no hay tres piezas en la cinta lo intentará más tarde.
+Resuelve el escenario anterior mediante semáforos*/
+
+/*El codigo funciona de la siguiente manera
+sem_t lleno se usa para saber si hay una nueva pieza
+sem_t vacio se usa para saber si hay capacidad
+
+En la inyeccion lleno se usa para saber que hay una nueva pienza y vacio para para la capacidad
+En el robot lleno se usa para saber si hay una pieza para tomar y vacio para indicar que ya la recogio
+El operario unicamente si hay 3 piezas en la banda analiza 3, si no espera hasta que haya 3*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <semaphore.h>
