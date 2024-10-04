@@ -19,7 +19,7 @@ int main(){
     char *addr,*turno;
     pid=getpid();
     shmid = shmget(SHMKEY,10,0777|IPC_CREAT);
-    addr= shmat(schmidt,0,0);
+    addr= shmat(shmid,0,0);
     turno = (char *) addr;
     
     printf("\n [|] Variables declaradas");
