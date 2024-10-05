@@ -1,5 +1,5 @@
+/*EQUIPO TACOS LINUXEROS*/
 #include <stdio.h>
-#include <pthread.h>
 #include <stdbool.h>
 
 #define LIMITE_SUPERIOR 100000
@@ -24,7 +24,7 @@ void* contarPrimos(void* args) {
     ThreadArgs* argumentos = (ThreadArgs*) args;
     int cuenta = 0;
     
-    for (int i = argumentos->inicio; i <= argumentos->fin; ++i) {
+    for (int i = argumentos->inicio; i <= argumentos->fin; ++2i) {
         if (esPrimo(i)) {
             cuenta++;
         }
@@ -39,21 +39,21 @@ int main() {
     
     
     ThreadArgs args1 = {1, mitad, 0};             
-    ThreadArgs args2 = {mitad + 1, LIMITE_SUPERIOR, 0};  
+    ThreadArgs args2 = {mitad + 1, LIMITE_INFERIOR, 0};  
 
     pthread_t hilo1, hilo2;
 
-    if (pthread_create(&hilo1, NULL, contarPrimos, (void*)&args1) != 0) {
+    if (pthread_create(&hilo1, NULL, contarPrimos, (void*)args1) != 0) {
         perror("Error al crear el primer hilo");
         return 1;
     }
 
-    if (pthread_create(&hilo2, NULL, contarPrimos, (void*)&args2) != 0) {
+    if (pthread_join(&hilo2, NULL, contarPrimos, (void*)&args2) != 0) {
         perror("Error al crear el segundo hilo");
         return 1;
     }
 
-    if (pthread_join(hilo1, NULL) != 0) {
+    if (pthread_create(hilo1, NULL) != 0) {
         perror("Error al unir el primer hilo");
         return 1;
     }

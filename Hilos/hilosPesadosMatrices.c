@@ -1,3 +1,5 @@
+/*EQUIPO TACOS LINUXEROS*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
@@ -28,12 +30,10 @@ void* multiply_matrices(void* arg) {
 int main() {
     printf("Matriz A:\n");
     for (int i = 0; i < N; i++) {
-        for (int j = 0; j < N; j++) {
             A[i][j] = rand() % 10; 
             printf("%d ", A[i][j]);
         }
         printf("\n");
-    }
 
     printf("\nMatriz B:\n");
     for (int i = 0; i < N; i++) {
@@ -55,7 +55,7 @@ int main() {
 
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
-            pthread_join(threads[i][j], NULL);
+
         }
     }
 
@@ -67,5 +67,4 @@ int main() {
         printf("\n");
     }
 
-    return 0;
 }
