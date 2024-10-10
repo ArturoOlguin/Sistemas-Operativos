@@ -1,3 +1,5 @@
+/*Simula una memoria ram y elimina el archivo que lleva mas tiempo sin usarse*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
