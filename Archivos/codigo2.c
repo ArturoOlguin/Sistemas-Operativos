@@ -30,10 +30,9 @@ void abrir_pdf(const char *ruta_pdf) {
 
 int main() {
     const char *archivos_pdf[] = {
-        "Uno\\Ejemplo1.pdf",
-        "Dos\\Ejemplo2.pdf",
-        "Tres\\Ejemplo3.pdf",
-        "Cuatro\\Ejemplo4.pdf"
+        "Uno\\Manejador_de_Interrupciones.pdf",
+        "Dos\\Controladores_de_los_dispositivos.pdf",
+        "Tres\\Software_Modo_Usuario.pdf",
     };
 
     for (int i = 0; i < 4; i++) {
