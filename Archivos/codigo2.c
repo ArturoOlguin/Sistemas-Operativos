@@ -3,7 +3,7 @@
 #include <string.h>
 #include <windows.h>
 
-// Función para abrir un archivo PDF y esperar a que se cierre
+/*Funcion para abrir los archivos*/
 void abrir_pdf(const char *ruta_pdf) {
     SHELLEXECUTEINFO shExInfo = {0};
     shExInfo.cbSize = sizeof(SHELLEXECUTEINFO);
@@ -30,16 +30,17 @@ void abrir_pdf(const char *ruta_pdf) {
 
 int main() {
     const char *archivos_pdf[] = {
-        "Uno\\Manejador_de_Interrupciones.pdf",
-        "Dos\\Controladores_de_los_dispositivos.pdf",
-        "Tres\\Software_Modo_Usuario.pdf",
+        "Uno\\Manejador de interrupcion.pdf",
+        "Dos\\Controladores de dispositivos.pdf",
+        "Tres\\Software modo usuario para E.pdf",
     };
 
-    for (int i = 0; i < 4; i++) {
+    for (int i = 0; i < 3; i++) {
         printf("Abriendo archivo: %s\n", archivos_pdf[i]);
         abrir_pdf(archivos_pdf[i]);
     }
 
-    printf("Todos los archivos han sido cerrados. Fin del programa.\n");
+    printf("Todos los archivos han sido cerrados.\n");
+    printf("Saliendo");
     return 0;
 }
