@@ -1,0 +1,192 @@
+{
+  "main": {
+    "id": "71fb80f9897a5c52",
+    "type": "split",
+    "children": [
+      {
+        "id": "0a800f7297325774",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8c57b5414101f3e2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Procesos.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Procesos"
+            }
+          },
+          {
+            "id": "8cdb641f88360ab3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "FORK.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "FORK"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "36879a1d71304458",
+    "type": "split",
+    "children": [
+      {
+        "id": "7d2af2dc7f7a0e7c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3f6def92e7702398",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byCreatedTimeReverse"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "340e8396c751bf37",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "30c074d570b2c182",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "85cfea8153fd2eef",
+    "type": "split",
+    "children": [
+      {
+        "id": "e8276a2f1c8fc51d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "569eebb38d9a004c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "FORK.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes de FORK"
+            }
+          },
+          {
+            "id": "09441ffdb8225c80",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "FORK.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes de FORK"
+            }
+          },
+          {
+            "id": "fbbadaf494a7c5f6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "7824bae6a593caf1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "FORK.md"
+              },
+              "icon": "lucide-list",
+              "title": "Esquema de FORK"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "8cdb641f88360ab3",
+  "lastOpenFiles": [
+    "Procesos.md",
+    "FORK.md",
+    "Sin nombre",
+    "Sin título.md",
+    "Operaciones de entrada y salida.md",
+    "Sistemas operativos.md",
+    "Práctica 1.md",
+    "Bienvenido.md",
+    "Practica 1.md"
+  ]
+}
